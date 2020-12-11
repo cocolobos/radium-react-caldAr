@@ -2,7 +2,7 @@
 
   {
     "number": 1,
-    "name": "Theodosia Mews",
+    "fullName": "Theodosia Mews",
     "email": "tmews0@instagram.com",
     "phone": 4683244,
     "statusActive": "Active",
@@ -12,7 +12,7 @@
   }, 
   {
     "number": 2,
-    "name": "Leonel Messi",
+    "fullName": "Leonel Messi",
     "email": "messi19@caldar.com",
     "phone": 4656244,
     "statusActive": "Inactive",
@@ -22,7 +22,7 @@
   }, 
   {
     "number": 3,
-    "name": "Jose Gomez",
+    "fullName": "Jose Gomez",
     "email": "gomez0@caldar.com",
     "phone": 4685894,
     "statusActive": "Active",
@@ -32,7 +32,7 @@
   }, 
   {
     "number": 4,
-    "name": "Juan Porcel",
+    "fullName": "Juan Porcel",
     "email": "porcelj@instagram.com",
     "phone": 4614759,
     "statusActive": "Active",
@@ -42,7 +42,7 @@
   }, 
   {
     "number": 5,
-    "name": "Marcelo Tinelli",
+    "fullName": "Marcelo Tinelli",
     "email": "cuervoti@caldar.com",
     "phone": 4612344,
     "statusActive": "Inactive",

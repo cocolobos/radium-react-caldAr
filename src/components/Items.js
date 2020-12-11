@@ -41,7 +41,7 @@ export class Items extends Component{
             <div>
                 <ul style={this.ulStyle()}>
                     <li style={this.liStyle()}>{ this.props.tech.number }</li>
-                    <li style={this.liStyle()}>{ this.props.tech.name }</li>
+                    <li style={this.liStyle()}>{ this.props.tech.fullName }</li>
                     <li style={this.liStyle()}>{ this.props.tech.email }</li>
                     <li style={this.liStyle()}>{ this.props.tech.phone }</li>
                     <li style={this.liStyle()}>{ this.props.tech.statusActive }</li>

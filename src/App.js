@@ -3,6 +3,7 @@ import Technicians from './components/Technicians';
 import AddTechnician from './components/AddTechnician';
 import Header from './components/layout/header';
 import mockTechnicians from './mockTechnicians.json';
+import nextId from 'react-id-generator';
 import './App.css';
 
 class App extends Component {
@@ -12,9 +13,11 @@ class App extends Component {
     this.setState({mockTechnicians: [...this.state.mockTechnicians.filter(tech => tech.number !== number)] })
   }
 
-  addTech = (name) => {
+  addTech = (fullName, email) => {
     const newTech = {
-      name,
+      number: nextId(),
+      fullName,
+      email,
     }
     this.setState({mockTechnicians: [...this.state.mockTechnicians, newTech]})
   }
