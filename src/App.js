@@ -13,11 +13,16 @@ class App extends Component {
     this.setState({mockTechnicians: [...this.state.mockTechnicians.filter(tech => tech.number !== number)] })
   }
 
-  addTech = (fullName, email) => {
+  addTech = ({fullName, email, phone, statusActive, trained, assignedClients, spareHoursAvailable}) => {
     const newTech = {
       number: nextId(),
       fullName,
       email,
+      phone,
+      statusActive,
+      trained,
+      assignedClients,
+      spareHoursAvailable
     }
     this.setState({mockTechnicians: [...this.state.mockTechnicians, newTech]})
   }

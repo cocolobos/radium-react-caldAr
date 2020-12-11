@@ -68,3 +68,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+<li style={this.otherStyle()}>{ this.props.tech.title1 }</li>
+                    <li style={this.otherStyle()}>{ this.props.tech.title2 }</li>
+                    <li style={this.otherStyle()}>{ this.props.tech.title3 }</li>
+                    <li style={this.otherStyle()}>{ this.props.tech.title4 }</li>
+                    <li style={this.otherStyle()}>{ this.props.tech.title5 }</li>
+                    <li style={this.otherStyle()}>{ this.props.tech.title6 }</li>
+                    <li style={this.otherStyle()}>{ this.props.tech.title7 }</li>
+                    <li style={this.otherStyle()}>{ this.props.tech.title8 }</li>
+                    <li style={this.otherStyle()}>{ this.props.tech.title9 }</li>
+
+                      {
+    "title1": "Number",
+    "title2": "Name",
+    "title3": "Email",
+    "title4": "Phone",
+    "title5": "Status",
+    "title6": "Trained in",
+    "title7": "Assigned Clients",
+    "title8": "Spare Hours Available",
+    "title9": "Actions"
+  },
