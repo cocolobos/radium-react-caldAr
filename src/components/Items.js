@@ -41,7 +41,6 @@ export class Items extends Component{
                         <button onClick={this.props.delTech.bind(this, number)} style={dltBtn}>DLT</button>
                         <button style={edtBtn}>EDT</button>
                     </div>    
-                    
                 </ul>
             </div>
         )
