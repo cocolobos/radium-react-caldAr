@@ -27,7 +27,7 @@ export class AddTechnician extends Component {
     }
     render () {
         return (
-            <form onSubmit={this.onSubmit} style={{ marginTop: '20px', display: 'flex'}}>
+            <form onSubmit={this.onSubmit} style={{ marginTop: '100px', display: 'flex'}}>
                 <input
                     type="text" 
                     name="fullName" 
@@ -88,7 +88,7 @@ export class AddTechnician extends Component {
                     type="submit" 
                     value="Submit"
                     className="btn"
-                    style={{flex: '1'}}
+                    style={{color: 'rgb(239,232,216)',backgroundColor: 'rgb(19,84,76)',border: '1px solid #333',fontWeight: '600', flex: '1'}}
                 ></input>
             </form>
         )

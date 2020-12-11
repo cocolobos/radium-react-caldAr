@@ -8,7 +8,7 @@ export class Items extends Component{
             margin: 0,
             padding: 0,
             overflow: 'hidden',
-            backgroundColor: 'rgb(255,255,255)'
+            backgroundColor: 'rgb(239,232,216)'
         }
     }
     liStyle = () => {
@@ -20,19 +20,8 @@ export class Items extends Component{
             fontWeight: 600,
             fontSize: 13,
             textAlign: 'center',
-            padding: '16px 16px 16px',
+            padding: '16px 10px 16px',
             borderBottom: '1px solid #333',
-        }
-    }
-    otherStyle = () => {
-        return {
-            float: 'left',
-            display: 'block',
-            width: '11%',
-            color: '#0E5240',
-            textAlign: 'center',
-            fontWeight: 600,
-            fontSize: 13,
         }
     }
     render() {
