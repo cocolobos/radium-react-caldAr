@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import Technicians from './components/Technicians';
-import AddTechnician from './components/AddTechnician';
+import AddTechnician from './components/AddTechnicians/AddTechnician';
 import Header from './components/layout/header';
 import mockTechnicians from './mocks/mockTechnicians.json';
 import nextId from 'react-id-generator';
@@ -11,6 +11,17 @@ class App extends Component {
   
   delTech = (number) =>{
     this.setState({mockTechnicians: [...this.state.mockTechnicians.filter(tech => tech.number !== number)] })
+  }
+
+  updateTechnician = (techUpdated) => {
+    this.setState({
+      mockTechnicians: [...this.state.mockTechnicians.map(tech => {
+        if(tech.number === techUpdated.number) {
+          tech = techUpdated;
+        }
+        return tech;
+      })]
+    });
   }
 
   addTech = ({fullName, email, phone, statusActive, trained, assignedClients, spareHoursAvailable}) => {
@@ -32,7 +43,11 @@ class App extends Component {
       <div className="App">
         <div className="container">
         <Header />
-        <Technicians technicians={this.state.mockTechnicians} delTech={this.delTech} />
+        <Technicians 
+          technicians={this.state.mockTechnicians} 
+          delTech={this.delTech} 
+          updateTechnician={this.updateTechnician} 
+        />
         <AddTechnician  addTech={this.addTech}/>
         </div>
       </div>

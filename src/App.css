@@ -20,15 +20,6 @@ a{
   padding: 0 1rem;
 }
 
-.btn{
-  display: inline-block;
-  border: none;
-  background:rgb(239,232,216);
-  color: rgb(19,84,76);
-  padding: 7px 20px;
-  cursor: pointer;
-}
-
 .btn:hover{
   background: #666;
 }

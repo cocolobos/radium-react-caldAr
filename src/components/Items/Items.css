@@ -1,0 +1,10 @@
+.inputStyleEdt{
+    flex: 1;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 4px;
+    width: 138px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
