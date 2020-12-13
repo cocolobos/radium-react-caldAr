@@ -11,7 +11,9 @@ export class AddTechnician extends Component {
         assignedClients: '',
         spareHoursAvailable: ''
     }
+    
     onChange = (e) => this.setState({[e.target.name]: e.target.value });
+
     onSubmit = (e) => {
         e.preventDefault();
         this.props.addTech(this.state);
@@ -26,6 +28,7 @@ export class AddTechnician extends Component {
                 spareHoursAvailable: ''
             });
     }
+
     render () {
         return (
             <form className="addForm" onSubmit={this.onSubmit} >
@@ -35,6 +38,7 @@ export class AddTechnician extends Component {
                     placeholder=" Add Name"
                     value={this.state.fullName}
                     onChange={this.onChange}
+                    required
                 ></input>
                 <input className="inputStyle"
                     type="email" 
@@ -42,6 +46,7 @@ export class AddTechnician extends Component {
                     placeholder=" Add Email"
                     value={this.state.email}
                     onChange={this.onChange}
+                    required
                 ></input>
                 <input className="inputStyle"
                     type="number" 
@@ -49,6 +54,7 @@ export class AddTechnician extends Component {
                     placeholder=" Add Phone"
                     value={this.state.phone}
                     onChange={this.onChange}
+                    required
                 ></input>
                 <input className="inputStyle"
                     type="text" 
@@ -56,6 +62,7 @@ export class AddTechnician extends Component {
                     placeholder=" Add Status"
                     value={this.state.statusActive}
                     onChange={this.onChange}
+                    required
                 ></input>
                 <input className="inputStyle"
                     type="text" 
@@ -63,6 +70,7 @@ export class AddTechnician extends Component {
                     placeholder=" Add Trained Skills"
                     value={this.state.trained}
                     onChange={this.onChange}
+                    required
                 ></input>
                 <input className="inputStyle"
                     type="number" 
@@ -70,6 +78,7 @@ export class AddTechnician extends Component {
                     placeholder=" Add Asigned Clients"
                     value={this.state.assignedClients}
                     onChange={this.onChange}
+                    required
                 ></input>
                 <input className="inputStyle"
                     type="number" 
@@ -77,6 +86,7 @@ export class AddTechnician extends Component {
                     placeholder="Add Spare Hours"
                     value={this.state.spareHoursAvailable}
                     onChange={this.onChange}
+                    required
                 ></input>
                 <input className="btnSubmit"
                     type="submit" 

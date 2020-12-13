@@ -6,12 +6,12 @@ class Technicians extends Component {
   render(){
     console.log(this.props.technicians)
     return this.props.technicians.map((tech) => (
-        <Items 
-          key={tech.number} 
-          tech={tech} 
-          delTech={this.props.delTech} 
-          updateTechnician={this.props.updateTechnician}
-        />
+      <Items 
+        key={tech.number} 
+        tech={tech} 
+        delTech={this.props.delTech} 
+        updateTechnician={this.props.updateTechnician}
+      />
     ));
   } 
 }
@@ -19,4 +19,5 @@ class Technicians extends Component {
 Technicians.propTypes = {
     technicians: PropTypes.array.isRequired
 }
+
 export default Technicians;

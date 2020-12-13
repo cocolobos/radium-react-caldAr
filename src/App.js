@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Technicians from './components/Technicians';
 import AddTechnician from './components/AddTechnicians/AddTechnician';
-import Header from './components/layout/header';
+import Header from './components/Header/Header';
 import mockTechnicians from './mocks/mockTechnicians.json';
 import nextId from 'react-id-generator';
 import './App.css';
