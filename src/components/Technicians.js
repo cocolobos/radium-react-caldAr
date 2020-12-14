@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 class Technicians extends Component {
   render(){
-    console.log(this.props.technicians)
     return this.props.technicians.map((tech) => (
       <Items 
         key={tech.number} 

@@ -101,9 +101,7 @@ export class Items extends Component{
                 <li className="liStyle">{ this.props.tech.spareHoursAvailable }</li>
                 <div>
                     <button onClick={this.props.delTech.bind(this, number)} className="Btn"><GoTrashcan/></button>
-                    <button 
-                    onClick={this.toggleEdit} 
-                    className="Btn"><BiPencil/></button>
+                    <button onClick={this.toggleEdit} className="Btn"><BiPencil/></button> 
                 </div>    
             </ul>
         )

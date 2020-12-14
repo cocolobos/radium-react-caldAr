@@ -42,13 +42,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="container">
-        <Header />
-        <Technicians 
-          technicians={this.state.mockTechnicians} 
-          delTech={this.delTech} 
-          updateTechnician={this.updateTechnician} 
-        />
-        <AddTechnician  addTech={this.addTech}/>
+          <Header />
+          <Technicians 
+            technicians={this.state.mockTechnicians} 
+            delTech={this.delTech} 
+            updateTechnician={this.updateTechnician} 
+          />
+          <AddTechnician  addTech={this.addTech}/>
         </div>
       </div>
     );
