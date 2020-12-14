@@ -103,7 +103,7 @@ export class Items extends Component{
                     <button onClick={this.props.delTech.bind(this, number)} className="Btn"><GoTrashcan/></button>
                     <button onClick={this.toggleEdit} className="Btn"><BiPencil/></button> 
                 </div>    
-            </ul>
+            </ul>  
         )
     }
 }
