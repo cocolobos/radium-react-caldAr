@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Technicians from './Technicians/Technicians';
+import Technicians from './components/Technicians/Technicians';
 import AddTechnician from './components/AddTechnicians/AddTechnician';
 import Header from './components/Header/Header';
 import mockTechnicians from './mocks/mockTechnicians.json';
