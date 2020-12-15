@@ -8,7 +8,7 @@ class Technicians extends Component {
     return(
       <div>
         <ul className="ulStyle">
-          <li className="liStyleHeader">Number</li>
+          <li className="liStyleHeader">Id</li>
           <li className="liStyleHeader">Full Name</li>
           <li className="liStyleHeader">Email</li>
           <li className="liStyleHeader">Phone</li>
